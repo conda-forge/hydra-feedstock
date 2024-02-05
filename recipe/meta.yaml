@@ -21,6 +21,7 @@ requirements:
     - python
     - cython >=0.24
     - pip
+    - setuptools
   run:
     - python
 
