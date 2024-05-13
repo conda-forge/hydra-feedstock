@@ -10,13 +10,14 @@ source:
   sha256: 247091b9c279c77686ea995f0f07070a28870c1942959b1474ad57076074384a
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - '{{ compiler("c") }}'
+    - {{ stdlib("c") }}
   host:
     - python
     - cython >=0.24
